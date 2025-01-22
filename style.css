@@ -19,8 +19,11 @@ main{
 }
 img{
     width: 100%;
-    /* height: 100%; */
+    /* height: 100%; */ 
        
+}
+.drawer img{
+    border-radius: 13px 0px 0px 13px;
 }
 
 section{
@@ -34,13 +37,17 @@ section{
     
     background-color: white;
     border-radius: 13px;
-    overflow: hidden;
+    overflow: visible;
+    position: relative;
 
 }
 .content{
     
     padding-top:36px ;
     padding-bottom:20px ;
+    /* position: relative; */
+    /* overflow: visible; */
+    z-index: 0;
 }
 h1{
     font-size: 1rem;
@@ -147,9 +154,40 @@ button{
 .bottomdark div{
     display: flex; 
     background-color: hsl(217, 19%, 35%); 
-    gap: 10px;
+    gap: 15px;
 }
 .sharedark img{
     color: hsl(217, 19%, 35%);
 }
+
+.hide{
+    display: none;
+
+}
+.respo{
+    position: absolute;
+    left: 70.2%;
+    bottom: 27%;
+    z-index: 1;
+
+    width: 230px;
+    height: 20px;
+    justify-content: space-around;
+
+    /* clip-path: polygon(100% 0, 100% 80%, 55% 80%, 50% 100%, 45% 80%, 0 80%, 0 0); */
+    border-radius: 10px;
+
+
+}
+.triangle{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 55%;
+    bottom: -15px;
+    background: hsl(217, 19%, 35%);
+    clip-path: polygon(100% 0%, 0 0, 50% 70%);;
+}
+
+
 
